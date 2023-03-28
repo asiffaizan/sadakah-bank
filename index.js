@@ -1,4 +1,4 @@
-//login button event handler
+//login button event handler =========>>>
 const loginBtn = document.getElementById("login");
 loginBtn.addEventListener("click",function(){
     const loginArea = document.getElementById("login-area");
@@ -8,7 +8,7 @@ loginBtn.addEventListener("click",function(){
     transactionArea.style.display = "block";
 })
 
-//deposit button event handler
+//deposit button event handler =========>>>>>
 const depositBtn = document.getElementById("addDeposit");
 depositBtn.addEventListener("click", function(){
     const depositNumber = getInputNumber("depositAmount");
@@ -17,8 +17,7 @@ depositBtn.addEventListener("click", function(){
     document.getElementById("depositAmount").value = ""; //[for empty input box];
 })
 
-//withDraw button event handler
-
+//withDraw button event handler =========>>>>>
 const withdrawBtn = document.getElementById("addWithdraw");
 withdrawBtn.addEventListener("click", function(){
     const withdrawNumber = getInputNumber("withdrawAmount");
@@ -28,8 +27,7 @@ withdrawBtn.addEventListener("click", function(){
     document.getElementById("withdrawAmount").value = "";//[for empty input box];
 })
 
-//common function
-
+//common function=========>>>>>>>
 function updateSpanText(id,amount) {
     const current = document.getElementById(id).innerText;
     const currentNumber = parseFloat(current);
